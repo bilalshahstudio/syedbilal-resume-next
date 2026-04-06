@@ -5,7 +5,10 @@ import CountUp from "../../ui components/CountNumber/CountNumber";
 
 export default function Hero() {
   return (
-    <section className="grid md:grid-cols-3 gap-6 items-center max-w-7xl mx-auto py-16 px-6">
+    <section
+      id="home"
+      className="grid md:grid-cols-3 gap-6 items-center max-w-7xl mx-auto py-16 px-6"
+    >
       {/* Left: Intro */}
       <div className="space-y-4">
         <h1 className="text-3xl md:text-5xl font-bold text-primary-foreground">

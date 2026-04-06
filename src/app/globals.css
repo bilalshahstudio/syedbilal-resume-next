@@ -48,6 +48,10 @@ body {
   /* background-image: url("/backgrounds/1.jpg"); */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* 
 ---break--- */
 

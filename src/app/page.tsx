@@ -11,15 +11,25 @@ import GooeyNav from "./components/ui components/GooeyNav/GooeyNav";
 import TargetCursor from "./components/ui components/CursorTarget/CursorTarget";
 import { AnimatePresence } from "framer-motion";
 import IntroScreen from "./components/pages/IntroScreen/IntroScreen";
+import MyProjects from "./components/pages/MyProjects/MyProjects";
 
 const items = [
-  { label: "Home", href: "#" },
-  { label: "About", href: "#" },
-  { label: "Contact", href: "#" },
+  { label: "Home", href: "#home" },
+  { label: "About", href: "#about" },
+  { label: "Skills", href: "#skills" },
+  { label: "Work", href: "#work" },
+  { label: "Contact", href: "#contact" },
 ];
 
 export default function LandingPage() {
   const [showIntro, setShowIntro] = useState(true);
+
+  const handleScroll = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <>
       <AnimatePresence>
@@ -33,7 +43,10 @@ export default function LandingPage() {
           {/* <Header /> */}
           <div className="flex justify-center mt-7">
             <GooeyNav
-              items={items}
+              items={items.map((item) => ({
+                ...item,
+                onClick: () => handleScroll(item.href),
+              }))}
               particleCount={15}
               particleDistances={[90, 10]}
               particleR={100}
@@ -47,6 +60,7 @@ export default function LandingPage() {
           <About />
           <Experience />
           <Services />
+          <MyProjects />
           <Skills />
           <Contact />
         </main>

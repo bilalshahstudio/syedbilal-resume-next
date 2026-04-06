@@ -71,7 +71,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="py-20 px-6 md:px-12">
+    <section id="contact" className="py-20 px-6 md:px-12">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
         {/* Left side */}
         <div>
