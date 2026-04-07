@@ -7,18 +7,21 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="grid md:grid-cols-3 gap-6 items-center max-w-7xl mx-auto py-16 px-6"
+      className="grid md:grid-cols-3 gap-6 items-center max-w-7xl mx-auto py-16 px-11"
     >
       {/* Left: Intro */}
       <div className="space-y-4">
-        <h1 className="text-3xl md:text-5xl font-bold text-primary-foreground">
+        <h1 className="text-2xl md:text-5xl font-bold text-opacity-5 text-gray-200">
           Hello, I’m
         </h1>
-        <h2 className="text-2xl md:text-4xl font-semibold text-highlight">
+        <h2 className="text-4xl md:text-7xl font-semibold text-highlight">
           Syed Bilal
         </h2>
-        <h2 className="text-2xl md:text-4xl font-semibold text-primary-foreground">
-          Web Designer
+        <h2 className="text-4xl md:text-7xl font-semibold text-primary-foreground whitespace-nowrap">
+          Software Engineer,
+        </h2>
+        <h2 className="text-4xl md:text-7xl font-semibold text-primary-foreground whitespace-nowrap">
+          MERN Stack
         </h2>
         <p className="text-description">
           We denounce with righteous indignation dislike demoralized by the
@@ -52,14 +55,14 @@ export default function Hero() {
       <div className="bg-bg-black text-secondary rounded-2xl p-6 shadow-lg space-y-4">
         <div>
           <span className="count-up-text text-3xl font-bold text-highlight">
-            <CountUp from={0} to={100} duration={1} />+
+            <CountUp from={0} to={1.5} duration={1} />+
           </span>
           <p className="text-description">Years Experience</p>
         </div>
         <div>
           {/* <h3 className="text-3xl font-bold text-highlight">50+</h3> */}
           <span className="count-up-text text-3xl font-bold text-highlight">
-            <CountUp from={0} to={50} duration={1} />+
+            <CountUp from={0} to={10} duration={1} />+
           </span>
           <p className="text-description">Projects Completed</p>
         </div>

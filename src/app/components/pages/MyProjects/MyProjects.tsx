@@ -44,7 +44,7 @@ export default function MyProjects() {
       ref={sectionRef}
       className="w-full py-20 overflow-hidden"
     >
-      {/* Headings */}
+      {/* Headings */}``
       <div className="max-w-7xl mx-auto px-6 mb-12">
         <h4 className="text-center text-sm text-highlight mb-2">
           Latest Works
