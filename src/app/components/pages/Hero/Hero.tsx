@@ -55,21 +55,42 @@ export default function Hero() {
       <div className="bg-bg-black text-secondary rounded-2xl p-6 shadow-lg space-y-4">
         <div>
           <span className="count-up-text text-3xl font-bold text-highlight">
-            <CountUp from={0} to={1.5} duration={1} />+
+            <CountUp
+              from={0}
+              to={1.5}
+              duration={1}
+              onStart={undefined}
+              onEnd={undefined}
+            />
+            +
           </span>
           <p className="text-description">Years Experience</p>
         </div>
         <div>
           {/* <h3 className="text-3xl font-bold text-highlight">50+</h3> */}
           <span className="count-up-text text-3xl font-bold text-highlight">
-            <CountUp from={0} to={10} duration={1} />+
+            <CountUp
+              from={0}
+              to={10}
+              duration={1}
+              onStart={undefined}
+              onEnd={undefined}
+            />
+            +
           </span>
           <p className="text-description">Projects Completed</p>
         </div>
         <div>
           {/* <h3 className="text-3xl font-bold text-highlight">95%</h3> */}
           <span className="count-up-text text-3xl font-bold text-highlight">
-            <CountUp from={0} to={95} duration={1} />%
+            <CountUp
+              from={0}
+              to={95}
+              duration={1}
+              onStart={undefined}
+              onEnd={undefined}
+            />
+            %
           </span>
           <p className="text-description">Client Satisfaction</p>
         </div>

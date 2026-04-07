@@ -55,11 +55,10 @@ export default function MyProjects() {
         </h2>
 
         <p className="text-left text-description max-w-2xl">
-          Some things I've built with love, expertise and a pinch of magical
-          ingredients.
+          Some things I&apos;ve built with love, expertise and a pinch of
+          magical ingredients.
         </p>
       </div>
-
       {/* Horizontal Scroll Container */}
       <div className="relative">
         <div ref={scrollRef} className="flex gap-6 px-6 w-max">
