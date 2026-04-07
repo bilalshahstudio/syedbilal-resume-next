@@ -37,8 +37,8 @@ export default function RootLayout({
           stagger={0.03}
         > */}
         {children}
-        {/* <SplashCursor /> */}
-        {/* </ScrollFloat> */}
+        <SplashCursor />
+        <ScrollFloat scrollContainerRef={undefined}>{children}</ScrollFloat>
       </body>
     </html>
   );
