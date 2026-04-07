@@ -30,13 +30,18 @@ export default function Hero() {
         <div className="flex space-x-4">
           <button
             className="bg-highlight text-black px-6 py-2 rounded-lg font-semibold cursor-pointer cursor-target "
-            onClick={() => alert("Hire Me")}
+            onClick={() =>
+              (window.location.href =
+                "mailto:bilalshahstudio@gmail.com?subject=Offer of Appointment")
+            }
           >
             Hire Me
           </button>
-          <button className="border border-highlight text-highlight px-6 py-2 rounded-lg font-semibold cursor-pointer cursor-target">
-            Download Resume
-          </button>
+          <a href="/bilal-resume.pdf" download="bilal-resume.pdf">
+            <button className="border border-highlight text-highlight px-6 py-2 rounded-lg font-semibold cursor-pointer cursor-target">
+              Download Resume
+            </button>
+          </a>
         </div>
       </div>
 
