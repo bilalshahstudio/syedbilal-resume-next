@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import SplashCursor from "./components/ui components/SplashCursor/SplashCursor";
-import ScrollFloat from "./components/ui components/ScrollFloat/ScrollFloat";
+// import SplashCursor from "./components/ui components/SplashCursor/SplashCursor";
+// import ScrollFloat from "./components/ui components/ScrollFloat/ScrollFloat";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,8 +37,8 @@ export default function RootLayout({
           stagger={0.03}
         > */}
         {children}
-        <SplashCursor />
-        <ScrollFloat scrollContainerRef={undefined}>{children}</ScrollFloat>
+        {/* <SplashCursor /> */}
+        {/* <ScrollFloat scrollContainerRef={undefined}>{children}</ScrollFloat> */}
       </body>
     </html>
   );
