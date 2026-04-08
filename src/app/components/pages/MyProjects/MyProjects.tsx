@@ -42,10 +42,10 @@ export default function MyProjects() {
     <section
       id="work"
       ref={sectionRef}
-      className="w-full py-20 overflow-hidden"
+      className="w-full py-6 md:py-20 px-6 md:px-16 overflow-hidden"
     >
       {/* Headings */}``
-      <div className="max-w-7xl mx-auto px-6 mb-12">
+      <div className="max-w-7xl mx-auto mb-12">
         <h4 className="text-center text-sm text-highlight mb-2">
           Latest Works
         </h4>
@@ -61,7 +61,7 @@ export default function MyProjects() {
       </div>
       {/* Horizontal Scroll Container */}
       <div className="relative">
-        <div ref={scrollRef} className="flex gap-6 px-6 w-max">
+        <div ref={scrollRef} className="flex gap-6 w-max">
           {/* Replace this with your Card Component */}
           {[
             "Hotel Management",
@@ -73,7 +73,7 @@ export default function MyProjects() {
           ].map((item) => (
             <div
               key={item}
-              className="min-w-[684px] h-[450px] bg-bg-black rounded-2xl flex items-center justify-center text-white shadow-lg"
+              className="md:min-w-[684px] min-w-[360px] h-[450px] bg-bg-black rounded-2xl flex items-center justify-center text-white shadow-lg"
             >
               Project Card {item}
             </div>

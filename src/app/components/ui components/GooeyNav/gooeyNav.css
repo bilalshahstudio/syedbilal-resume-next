@@ -177,6 +177,10 @@
   .gooey-nav-container ul {
     gap: 0rem !important;
   }
+
+  .gooey-nav-container nav ul li a {
+    padding: 0.6em 0.8em !important;
+  }
 }
 
 @keyframes particle {

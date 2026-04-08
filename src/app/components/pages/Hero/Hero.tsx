@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="inline-flex justify-between gap-6 items-center py-20 px-16"
+      className="md:inline-flex justify-between gap-6 items-center py-6  md:py-20 px-6 md:px-16 "
     >
       {/* Left: Intro */}
       <div className="space-y-4">

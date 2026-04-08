@@ -13,7 +13,7 @@ export default function About(): React.JSX.Element {
   return (
     <section
       id="about"
-      className=" grid md:grid-cols-2 gap-12 py-20 px-20 items-center bg-bg-black"
+      className=" grid md:grid-cols-2 gap-12 py-6  md:py-20 px-6 md:px-16 items-center bg-bg-black"
     >
       {/* Left: Textual Content */}
       <div className="space-y-6">
