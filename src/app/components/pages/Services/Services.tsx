@@ -35,7 +35,7 @@ export default function Services() {
   ];
 
   return (
-    <section className="py-20 px-6 md:px-12">
+    <section className="py-6 md:py-20 px-6 md:px-16">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold mb-10 text-white">
           Popular Services

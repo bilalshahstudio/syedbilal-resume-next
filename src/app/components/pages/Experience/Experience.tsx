@@ -26,7 +26,7 @@ export default function Experience() {
   ];
 
   return (
-    <section className="py-20 px-6 md:px-12">
+    <section className="py-6  md:py-20 px-6 md:px-16">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         {/* Left - Image */}
         <div className="flex items-center justify-center w-[150px] h-[150px] rounded-full bg-bg-card">

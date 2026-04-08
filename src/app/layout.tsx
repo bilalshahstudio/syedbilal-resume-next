@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import SplashCursor from "./components/ui components/SplashCursor/SplashCursor";
-// import ScrollFloat from "./components/ui components/ScrollFloat/ScrollFloat";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,18 +26,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`bg-bg-primary text-white bg-[url('/backgrounds/1.jpg')] bg-cover bg-fixed bg-center layoutContainer`}
+        className={`bg-bg-primary text-white bg-[url('/backgrounds/1.jpg')] bg-cover bg-fixed bg-center`}
       >
-        {/* <ScrollFloat
-          animationDuration={1}
-          ease="back.inOut(2)"
-          scrollStart="center bottom+=50%"
-          scrollEnd="bottom bottom-=40%"
-          stagger={0.03}
-        > */}
-        {children}
+        <div id="smooth-content">{children}</div>
+        {/* <div id="smooth-wrapper">
+        </div> */}
         <SplashCursor />
-        {/* <ScrollFloat scrollContainerRef={undefined}>{children}</ScrollFloat> */}
       </body>
     </html>
   );
