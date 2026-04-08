@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="grid md:grid-cols-3 gap-6 items-center max-w-7xl mx-auto py-16 px-11"
+      className="inline-flex justify-between gap-6 items-center py-20 px-16"
     >
       {/* Left: Intro */}
       <div className="space-y-4">
@@ -16,15 +16,15 @@ export default function Hero() {
           Hello, I’m
         </h1>
         <h2 className="text-4xl md:text-7xl font-semibold text-highlight">
-          <ScrollFloat
+          {/* <ScrollFloat
             animationDuration={1}
             ease="back.inOut(2)"
             scrollStart="center bottom+=50%"
             scrollEnd="bottom bottom-=40%"
             stagger={0.03}
-          >
-            Syed Bilal
-          </ScrollFloat>
+          > */}
+          Syed Bilal
+          {/* </ScrollFloat> */}
         </h2>
         <h2 className="text-4xl md:text-7xl font-semibold text-primary-foreground whitespace-nowrap">
           Software Engineer,
@@ -57,10 +57,11 @@ export default function Hero() {
       {/* Middle: Image */}
       <div className="flex justify-center -z-10">
         <Image
-          src="/profile.jpg"
+          src="/astronaut.gif"
           alt="profile-picture"
-          width={450}
-          height={450}
+          width={800}
+          height={800}
+          unoptimized
           className="rounded-2xl object-cover shadow-lg"
         />
       </div>

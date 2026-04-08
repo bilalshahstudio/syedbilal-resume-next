@@ -46,7 +46,7 @@ export default function LandingPage() {
         //   scrollEnd="bottom top"
         //   stagger={0.03}
         // >
-        <main>
+        <main className="main-page-container ">
           {/* <TargetCursor spinDuration={2} hideDefaultCursor={true} /> */}
           {/* <Header /> */}
           <div className="flex justify-center mt-7">
