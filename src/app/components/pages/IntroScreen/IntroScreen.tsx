@@ -11,7 +11,7 @@ export default function IntroScreen({ onFinish }: IntroScreenProps) {
   useEffect(() => {
     const timer = setTimeout(() => {
       onFinish();
-    }, 6000); // show for 3 seconds
+    }, 4000); // show for 3 seconds
     return () => clearTimeout(timer);
   }, [onFinish]);
 
