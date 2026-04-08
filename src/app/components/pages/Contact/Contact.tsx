@@ -72,7 +72,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="py-20 px-6 md:px-12">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start mb-10">
         {/* Left side */}
         <div>
           <h2 className="text-3xl font-bold text-white">Get In Touch</h2>
@@ -231,7 +231,7 @@ export default function Contact() {
           pauseOnHover
           scaleOnHover
           fadeOut
-          // fadeOutColor="#ffffff"
+          fadeOutColor="#0B0B0B"
           // ariaLabel="Technology partners"
           ariaLabel="Experties"
         />

@@ -53,7 +53,10 @@
   border-radius: 100vw;
   position: relative;
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
   box-shadow: 0 0 0.5px 1.5px transparent;
   color: white;
 }
@@ -168,6 +171,12 @@
   background: var(--color);
   opacity: 1;
   animation: point calc(var(--time)) ease 1 -350ms;
+}
+
+@media (max-width: 768px) {
+  .gooey-nav-container ul {
+    gap: 0rem !important;
+  }
 }
 
 @keyframes particle {

@@ -29,25 +29,30 @@ export default function Hero() {
         </p>
         <div className="flex space-x-4">
           <button
-            className="bg-highlight text-black px-6 py-2 rounded-lg font-semibold cursor-pointer cursor-target "
-            onClick={() => alert("Hire Me")}
+            className="bg-highlight text-black px-6 py-2 rounded-lg font-semibold cursor-pointer cursor-target whitespace-nowrap"
+            onClick={() =>
+              (window.location.href =
+                "mailto:bilalshahstudio@gmail.com?subject=Offer of Appointment")
+            }
           >
             Hire Me
           </button>
-          <button className="border border-highlight text-highlight px-6 py-2 rounded-lg font-semibold cursor-pointer cursor-target">
-            Download Resume
-          </button>
+          <a href="/bilal-resume.pdf" download="bilal-resume.pdf">
+            <button className="border border-highlight text-highlight px-6 py-2 rounded-lg font-semibold cursor-pointer cursor-target whitespace-nowrap">
+              Download Resume
+            </button>
+          </a>
         </div>
       </div>
 
       {/* Middle: Image */}
-      <div className="flex justify-center">
+      <div className="flex justify-center -z-10">
         <Image
-          src="/dummy-profile.png"
-          alt="Profile"
-          width={300}
-          height={300}
-          className="rounded-full object-cover shadow-lg"
+          src="/profile.jpg"
+          alt="profile-picture"
+          width={450}
+          height={450}
+          className="rounded-2xl object-cover shadow-lg"
         />
       </div>
 
