@@ -12,6 +12,7 @@ import TargetCursor from "./components/ui components/CursorTarget/CursorTarget";
 import { AnimatePresence } from "framer-motion";
 import IntroScreen from "./components/pages/IntroScreen/IntroScreen";
 import MyProjects from "./components/pages/MyProjects/MyProjects";
+import ScrollFloat from "./components/ui components/ScrollFloat/ScrollFloat";
 
 const items = [
   { label: "Home", href: "#home" },
@@ -38,6 +39,13 @@ export default function LandingPage() {
         )}
       </AnimatePresence>
       {!showIntro && (
+        // <ScrollFloat
+        //   animationDuration={1}
+        //   ease="back.inOut(2)"
+        //   scrollStart="top bottom"
+        //   scrollEnd="bottom top"
+        //   stagger={0.03}
+        // >
         <main>
           {/* <TargetCursor spinDuration={2} hideDefaultCursor={true} /> */}
           {/* <Header /> */}
@@ -64,6 +72,7 @@ export default function LandingPage() {
           <Skills />
           <Contact />
         </main>
+        // </ScrollFloat>
       )}
     </>
   );

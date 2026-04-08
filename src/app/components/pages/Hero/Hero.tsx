@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import CountUp from "../../ui components/CountNumber/CountNumber";
+import ScrollFloat from "../../ui components/ScrollFloat/ScrollFloat";
 
 export default function Hero() {
   return (
@@ -15,7 +16,15 @@ export default function Hero() {
           Hello, I’m
         </h1>
         <h2 className="text-4xl md:text-7xl font-semibold text-highlight">
-          Syed Bilal
+          <ScrollFloat
+            animationDuration={1}
+            ease="back.inOut(2)"
+            scrollStart="center bottom+=50%"
+            scrollEnd="bottom bottom-=40%"
+            stagger={0.03}
+          >
+            Syed Bilal
+          </ScrollFloat>
         </h2>
         <h2 className="text-4xl md:text-7xl font-semibold text-primary-foreground whitespace-nowrap">
           Software Engineer,
