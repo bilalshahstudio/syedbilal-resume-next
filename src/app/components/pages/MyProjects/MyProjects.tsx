@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import TailwindCard from "../../common components/TailwindCard";
 
 // register plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -10,6 +11,24 @@ gsap.registerPlugin(ScrollTrigger);
 export default function MyProjects() {
   const sectionRef = useRef<HTMLDivElement | null>(null);
   const scrollRef = useRef<HTMLDivElement | null>(null);
+
+  const projects = [
+    {
+      title: "Hotel Management",
+    },
+    {
+      title: "Finance Tracker App",
+    },
+    {
+      title: "Restaurant Booking System",
+    },
+    {
+      title: "Crypto News",
+    },
+    {
+      title: "AI Services",
+    },
+  ];
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -61,22 +80,16 @@ export default function MyProjects() {
       </div>
       {/* Horizontal Scroll Container */}
       <div className="relative">
-        <div ref={scrollRef} className="flex gap-6 w-max">
-          {/* Replace this with your Card Component */}
-          {[
-            "Hotel Management",
-            "Finance Tracker App",
-            "Restaurant Booking System",
-            "Crypto News",
-            "AI Services",
-            6,
-          ].map((item) => (
-            <div
-              key={item}
-              className="md:min-w-[684px] min-w-[360px] h-[450px] bg-bg-black rounded-2xl flex items-center justify-center text-white shadow-lg"
-            >
-              Project Card {item}
-            </div>
+        <div
+          ref={scrollRef}
+          className=" flex gap-6 w-max transform translate-x-[40.6283px]"
+        >
+          {/* {projects.map((item) => (
+            <ProjectCard key={item.title} data={item} />
+          ))} */}
+
+          {projects.map((item) => (
+            <TailwindCard key={item.title} item={item} />
           ))}
         </div>
       </div>
