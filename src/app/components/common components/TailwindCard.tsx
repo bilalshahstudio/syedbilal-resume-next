@@ -5,12 +5,18 @@ interface TailwindCardProps {
   item: {
     title: string;
     imgSrc: string;
+    projectURL?: string;
   };
 }
 
 const TailwindCard: React.FC<TailwindCardProps> = (props) => {
   return (
-    <a className="relative cursor-pointer md:min-w-[684px] min-w-[360px] h-[350px] isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8  max-w-sm mx-auto mt-4">
+    <a
+      href={props.item.projectURL}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="relative cursor-pointer md:min-w-[684px] min-w-[360px] h-[350px] isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8  max-w-sm mx-auto mt-4"
+    >
       <h3 className="z-10 mt-3 text-3xl font-bold text-highlight absolute top-1.5">
         {props.item.title}
       </h3>

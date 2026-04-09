@@ -17,11 +17,13 @@ export default function MyProjects() {
       title: "Hotel Management",
       imgSrc:
         "https://images.unsplash.com/photo-1556742205-e10c9486e506?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      projectURL: "https://budget-tracking-app-fe.vercel.app/",
     },
     {
       title: "Finance Tracker App",
       imgSrc:
         "https://images.unsplash.com/photo-1711606815631-38d32cdaec3e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      projectURL: "https://budget-tracking-app-fe.vercel.app/",
     },
     {
       title: "Restaurant Booking System",
@@ -32,11 +34,13 @@ export default function MyProjects() {
       title: "Tour Booking System",
       imgSrc:
         "https://images.unsplash.com/photo-1519922639192-e73293ca430e?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      projectURL: "https://budget-tracking-app-fe.vercel.app/",
     },
     {
       title: "E-commerce Store",
       imgSrc:
         "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      projectURL: "https://budget-tracking-app-fe.vercel.app/",
     },
   ];
 
