@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import TailwindCard from "../../common components/TailwindCard";
 
 // register plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -10,6 +11,38 @@ gsap.registerPlugin(ScrollTrigger);
 export default function MyProjects() {
   const sectionRef = useRef<HTMLDivElement | null>(null);
   const scrollRef = useRef<HTMLDivElement | null>(null);
+
+  const projects = [
+    {
+      title: "Hotel Management",
+      imgSrc:
+        "https://images.unsplash.com/photo-1556742205-e10c9486e506?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      projectURL: "https://budget-tracking-app-fe.vercel.app/",
+    },
+    {
+      title: "Finance Tracker App",
+      imgSrc:
+        "https://images.unsplash.com/photo-1711606815631-38d32cdaec3e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      projectURL: "https://budget-tracking-app-fe.vercel.app/",
+    },
+    {
+      title: "Restaurant Booking System",
+      imgSrc:
+        "https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      title: "Tour Booking System",
+      imgSrc:
+        "https://images.unsplash.com/photo-1519922639192-e73293ca430e?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      projectURL: "https://budget-tracking-app-fe.vercel.app/",
+    },
+    {
+      title: "E-commerce Store",
+      imgSrc:
+        "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      projectURL: "https://budget-tracking-app-fe.vercel.app/",
+    },
+  ];
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -61,22 +94,16 @@ export default function MyProjects() {
       </div>
       {/* Horizontal Scroll Container */}
       <div className="relative">
-        <div ref={scrollRef} className="flex gap-6 w-max">
-          {/* Replace this with your Card Component */}
-          {[
-            "Hotel Management",
-            "Finance Tracker App",
-            "Restaurant Booking System",
-            "Crypto News",
-            "AI Services",
-            6,
-          ].map((item) => (
-            <div
-              key={item}
-              className="md:min-w-[684px] min-w-[360px] h-[450px] bg-bg-black rounded-2xl flex items-center justify-center text-white shadow-lg"
-            >
-              Project Card {item}
-            </div>
+        <div
+          ref={scrollRef}
+          className=" flex gap-6 w-max transform translate-x-[40.6283px]"
+        >
+          {/* {projects.map((item) => (
+            <ProjectCard key={item.title} data={item} />
+          ))} */}
+
+          {projects.map((item) => (
+            <TailwindCard key={item.title} item={item} />
           ))}
         </div>
       </div>
